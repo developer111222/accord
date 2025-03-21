@@ -11,7 +11,7 @@ export default function ContactForm() {
     message: ''
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e:React.FormEvent<HTMLFormElement>) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
@@ -19,7 +19,7 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     setFormData({
