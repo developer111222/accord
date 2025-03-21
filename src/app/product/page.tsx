@@ -5,16 +5,29 @@ import { useEffect, useState } from 'react';
 import { TextHoverEffect } from '@/component/TextHoverEffect';
 import Image from 'next/image';
 
+// Define the Product type based on your expected data structure
+interface Product {
+  slug: string;
+  name: string;
+  description: string;
+  productimage: string;
+}
+
 export default function Page() {
-  const [products, setProducts] = useState([]);
+  // Provide the Product[] type to useState
+  const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    // Fetch product data (use an API in a real app)
     const fetchData = async () => {
-      const res = await fetch('/products.json');
-      const data = await res.json();
-      console.log(data);
-      setProducts(data);
+      try {
+        const res = await fetch('/products.json');
+        if (!res.ok) throw new Error('Failed to fetch products');
+        const data: Product[] = await res.json();
+        console.log(data);
+        setProducts(data);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      }
     };
     fetchData();
   }, []);
@@ -27,7 +40,7 @@ export default function Page() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {products.map((product) => (
           <div
-            key={product.slug} // Add the key prop using the unique 'slug' or 'id' here
+            key={product.slug} // TypeScript now knows 'slug' exists
             className="card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
           >
             <Image
