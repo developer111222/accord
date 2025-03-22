@@ -1,7 +1,6 @@
-// components/ContactForm.js
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -10,8 +9,11 @@ export default function ContactForm() {
     phone: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
-  const handleChange = (e:React.FormEvent<HTMLFormElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
@@ -19,15 +21,43 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setFormData({
-      firstName: '',
-      email: '',
-      phone: '',
-      message: ''
-    });
+    setIsSubmitting(true);
+    setError(null);
+    setSuccessMessage(null);
+
+    try {
+      // Replace with your API URL
+      const response = await fetch('/api/form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Something went wrong. Please try again later.');
+      }
+
+      const result = await response.json();
+
+      // Handle success
+      setSuccessMessage('Your message has been sent successfully!');
+      setFormData({
+        firstName: '',
+        email: '',
+        phone: '',
+        message: ''
+      });
+
+    } catch (error) {
+      // Handle error
+      setError(error instanceof Error ? error.message : 'An error occurred');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -76,10 +106,14 @@ export default function ContactForm() {
         <button
           type="submit"
           className="w-full py-3 px-4 text-white border-2 border-white rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-black transition-colors duration-200"
+          disabled={isSubmitting}
         >
-          Submit
+          {isSubmitting ? 'Submitting...' : 'Submit'}
         </button>
       </form>
+
+      {error && <p className="text-red-500 mt-4 lg-text">{error}</p>}
+      {successMessage && <p className="text-green-500 mt-4 lg-text">{successMessage}</p>}
     </div>
   );
 }
