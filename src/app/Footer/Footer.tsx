@@ -13,7 +13,7 @@ const Footer = () => {
           <span className="text-lg font-medium">Our Company</span>
         </div>
         <p className="text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+        Accord Cables, a leading cable manufacturing company, has been at the forefront of providing high-quality wiring solutions since its inception. With a commitment to innovation, reliability, and customer satisfaction, Accord Cables has become a trusted name in the industry.
         </p>
       </div>
 
@@ -21,10 +21,11 @@ const Footer = () => {
       <div className="flex flex-col space-y-2">
         <h3 className="font-semibold text-lg">Quick Links</h3>
         <ul className="space-y-2 text-sm">
-          <li><a href="#" className="hover:text-gray-400">About Us</a></li>
-          <li><a href="#" className="hover:text-gray-400">Services</a></li>
-          <li><a href="#" className="hover:text-gray-400">Blog</a></li>
-          <li><a href="#" className="hover:text-gray-400">Contact</a></li>
+          <li><a href="/about" className="hover:text-gray-400">About Us</a></li>
+          <li><a href="product" className="hover:text-gray-400">Products</a></li>
+          <li><a href="/contact" className="hover:text-gray-400">Contact</a></li>
+          <li><a href="/product/ZHFR-wires" className="hover:text-gray-400">ZHFR Wires</a></li>
+          <li><a href="/product/FR-wires" className="hover:text-gray-400">FR Wires</a></li>
         </ul>
       </div>
 
@@ -32,19 +33,20 @@ const Footer = () => {
       <div className="flex flex-col space-y-2">
         <h3 className="font-semibold text-lg">Products</h3>
         <ul className="space-y-2 text-sm">
-          <li><a href="#" className="hover:text-gray-400">Product 1</a></li>
-          <li><a href="#" className="hover:text-gray-400">Product 2</a></li>
-          <li><a href="#" className="hover:text-gray-400">Product 3</a></li>
-          <li><a href="#" className="hover:text-gray-400">Product 4</a></li>
+          <li><a href="/product/co-axial-cable" className="hover:text-gray-400">Co-Axial Cable</a></li>
+          <li><a href="/product/multicore-flexible-cable" className="hover:text-gray-400">Multicore Flexible Cable</a></li>
+          <li><a href="/product/submersible-cable" className="hover:text-gray-400">Submersible Cable</a></li>
+          <li><a href="/product/service-wire" className="hover:text-gray-400">Service Wire</a></li>
+          <li><a href="/product/FRLSH-wires" className="hover:text-gray-400">FRLSH Wires</a></li>
         </ul>
       </div>
 
       {/* Column 4: Contact and Social Icons */}
       <div className="flex flex-col space-y-4">
         <h3 className="font-semibold text-lg">Contact Us</h3>
-        <p className="text-sm">Phone: (123) 456-7890</p>
-        <p className="text-sm">Email: contact@company.com</p>
-        <p className="text-sm">Address: 1234 Street Name, City, State, ZIP</p>
+        <p className="text-sm">Phone:+91-8950867889</p>
+        <p className="text-sm">Email: accord_cables@yahoo.co.in</p>
+        <p className="text-sm">Address: BAWANA INDUSTRIAL AREA J -98 , SEC-4, DELHI-110039</p>
 
         {/* Social Icons */}
         <div className="flex space-x-4 mt-4">
