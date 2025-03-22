@@ -12,7 +12,7 @@ export default function Page() {
   // Fetch data from third-party API
   const fetchData = async () => {
     try {
-      const response = await fetch(''); // Replace with your third-party API URL
+      const response = await fetch('https://mrishi.onrender.com/api/acc-data'); // Replace with your third-party API URL
       const result = await response.json();
       setData(result); // Save the fetched data
     } catch (err) {
