@@ -63,7 +63,7 @@ export default function Page() {
         </div>
       ) : (
         <div>
-          <TextHoverEffect text="FORM DATA" />
+          <TextHoverEffect text="DATA" />
          
           {data ? (
             <div className="overflow-x-auto">

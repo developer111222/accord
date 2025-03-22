@@ -20,7 +20,7 @@ const ContactDetails = () => {
 
                             <AiOutlineMail color="white" size={50} />
                         </div>
-                        < h3 className='md:text-4xl lg:text-4xl sm:text-4xl'>accord_cables@yahoo.co .in</h3>
+                        < h3 className='md:text-4xl lg:text-4xl sm:text-4xl'>accord_cables@ yahoo.co.in</h3>
                     </div>
                 </div>
                 <div className='flex-1 my-5'>
