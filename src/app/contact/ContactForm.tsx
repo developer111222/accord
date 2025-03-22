@@ -29,7 +29,7 @@ export default function ContactForm() {
 
     try {
       // Replace with your API URL
-      const response = await fetch('https://mrishi.onrender.com/api/form', {
+      const response = await fetch('https://mrishi.onrender.com/api/acc-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
