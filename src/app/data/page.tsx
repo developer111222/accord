@@ -1,4 +1,5 @@
 "use client";
+import { TextHoverEffect } from '@/component/TextHoverEffect';
 import { useState } from 'react';
 
 interface Product {
@@ -62,7 +63,8 @@ export default function Page() {
         </div>
       ) : (
         <div>
-          <h1 className="text-white text-center text-3xl mb-6">Protected Data</h1>
+          <TextHoverEffect text="FORM DATA" />
+         
           {data ? (
             <div className="overflow-x-auto">
               <table className="min-w-full table-auto bg-gray-800 text-white rounded-lg">
