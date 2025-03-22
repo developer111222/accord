@@ -98,7 +98,7 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           placeholder="Your Message"
-          rows="2"
+          rows={2}
           required
           className="w-full px-4 py-3 text-white placeholder-gray-500 bg-black border-b-2 border-white outline-none resize-y"
         ></textarea>
