@@ -20,7 +20,7 @@ export default function Page() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     if (password === correctPassword) {
