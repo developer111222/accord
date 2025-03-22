@@ -15,16 +15,16 @@ const ContactDetails = () => {
                     </div>
                 </div>
                 <div className='flex-1 my-5'>
-                    <div className='bg-white flex flex-row rounded-full content-center items-center gap-5'>
-                        <div className='bg-black rounded-full p-5 items-center border-2 border-white'>
+                    <div className='flex flex-row bg-white rounded-full border-2 border-white content-center items-center gap-5'>
+                        <div className='bg-black rounded-full p-5 '>
 
                             <AiOutlineMail color="white" size={50} />
                         </div>
-                        < h3 className='md:text-4xl lg:text-4xl sm:text-5xl'>accord_cables@yahoo.co.in</h3>
+                        < h3 className='md:text-4xl lg:text-4xl sm:text-4xl'>accord_cables@yahoo.co .in</h3>
                     </div>
                 </div>
                 <div className='flex-1 my-5'>
-                    <div className="flex flex-row bg-white rounded-full border-3 border-white content-center items-center gap-5">
+                    <div className="flex flex-row bg-white rounded-full border-2 border-white content-center items-center gap-5">
                      
                      <div className="bg-black rounded-full p-5 ">
                      <SlLocationPin color="white" size={50} />
