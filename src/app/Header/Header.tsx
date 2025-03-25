@@ -49,7 +49,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold text-white">
-              Logo
+            <img src="logo.png" className="w-60 " />
             </Link>
           </div>
 

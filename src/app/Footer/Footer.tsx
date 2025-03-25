@@ -9,8 +9,8 @@ const Footer = () => {
       {/* Column 1: Icons and Text */}
       <div className="flex flex-col space-y-4">
         <div className="flex items-center space-x-2">
-          <span className="text-3xl">🏠</span> {/* Example icon */}
-          <span className="text-lg font-medium">Our Company</span>
+        <img src="logo.png" className="w-60 " />
+        
         </div>
         <p className="text-sm">
         Accord Cables, a leading cable manufacturing company, has been at the forefront of providing high-quality wiring solutions since its inception. With a commitment to innovation, reliability, and customer satisfaction, Accord Cables has become a trusted name in the industry.
