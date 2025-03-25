@@ -10,14 +10,14 @@ export function WhyChoose() {
         area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
         icon={<IoIosFlash className="h-4 w-4 text-white dark:text-white" />}
         title="Exceptional Quality"
-        description="Accords Cables ensures top-notch products with consistent, superior performance."
+        description="Accords Cable ensures top-notch products with consistent, superior performance."
       />
  
       <GridItem
         area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
         icon={<IoIosFlash className="h-4 w-4 text-white dark:text-neutral-400" />}
         title="Cutting-Edge Innovation"
-        description="Choose innovation that keeps your projects ahead with Accords Cables."
+        description="Choose innovation that keeps your projects ahead with Accords Cable."
       />
  
       <GridItem

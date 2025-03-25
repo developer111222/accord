@@ -48,33 +48,33 @@ export default function Header() {
           name: "House Wire",
           href: "/products/cables",
           submenu: [
-            { name: "Copper Cables", href: "/products/cables/copper" },
+            { name: "ZHFR Wires", href: "/products/cables/copper" },
             { name: "Fiber Optic Cables", href: "/products/cables/fiber" },
           ],
         },
         {
           name: "Multicore Flexible Cable",
           href: "/products/cables",
-          submenu: [
-            { name: "Copper Cables", href: "/products/cables/copper" },
-            { name: "Fiber Optic Cables", href: "/products/cables/fiber" },
-          ],
+          // submenu: [
+          //   { name: "Copper Cables", href: "/products/cables/copper" },
+          //   { name: "Fiber Optic Cables", href: "/products/cables/fiber" },
+          // ],
         },
         {
           name: "Submersible cable",
           href: "/products/cables",
-          submenu: [
-            { name: "Copper Cables", href: "/products/cables/copper" },
-            { name: "Fiber Optic Cables", href: "/products/cables/fiber" },
-          ],
+          // submenu: [
+          //   { name: "Copper Cables", href: "/products/cables/copper" },
+          //   { name: "Fiber Optic Cables", href: "/products/cables/fiber" },
+          // ],
         },
         {
           name: "Service Wire",
           href: "/products/cables",
-          submenu: [
-            { name: "Copper Cables", href: "/products/cables/copper" },
-            { name: "Fiber Optic Cables", href: "/products/cables/fiber" },
-          ],
+          // submenu: [
+          //   { name: "Copper Cables", href: "/products/cables/copper" },
+          //   { name: "Fiber Optic Cables", href: "/products/cables/fiber" },
+          // ],
         },
       ],
     },
