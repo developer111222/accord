@@ -13,7 +13,7 @@ const Footer = () => {
         
         </div>
         <p className="text-sm">
-        Accord Cables, a leading cable manufacturing company, has been at the forefront of providing high-quality wiring solutions since its inception. With a commitment to innovation, reliability, and customer satisfaction, Accord Cables has become a trusted name in the industry.
+        s Cables, a leading cable manufacturing company, has been at the forefront of providing high-quality wiring solutions since its inception. With a commitment to innovation, reliability, and customer satisfaction, Accords Cables has become a trusted name in the industry.
         </p>
       </div>
 
@@ -44,7 +44,7 @@ const Footer = () => {
       {/* Column 4: Contact and Social Icons */}
       <div className="flex flex-col space-y-4">
         <h3 className="font-semibold text-lg">Contact Us</h3>
-        <p className="text-sm">Phone:+91-8950867889</p>
+        <p className="text-sm">Phone:+91-9312219262</p>
         <p className="text-sm">Email: accord_cables@yahoo.co.in</p>
         <p className="text-sm">Address: BAWANA INDUSTRIAL AREA J -98 , SEC-4, DELHI-110039</p>
 

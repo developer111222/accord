@@ -15,13 +15,13 @@ const VisionAndMission = () => {
                 <div className='flex-1 p-5'>
                     <h3 className='text-white md:text-2xl lg:text-2xl pb-5'>Our Mission</h3>
                     <p className="max-w-xl mx-auto text-sm text-white dark:text-neutral-400">
-                        Accord Cables is dedicated to delivering superior quality cables that meet and exceed customer expectations. We aim to provide innovative and reliable wiring solutions that contribute to the success of our clients' projects. Our mission is to build long-lasting relationships with customers by ensuring exceptional quality, timely delivery, and excellent customer service.
+                        Accords Cables is dedicated to delivering superior quality cables that meet and exceed customer expectations. We aim to provide innovative and reliable wiring solutions that contribute to the success of our clients' projects. Our mission is to build long-lasting relationships with customers by ensuring exceptional quality, timely delivery, and excellent customer service.
                     </p>
                 </div>
                 <div className='flex-1 p-5'>
                     <h3 className='text-white md:text-2xl lg:text-2xl pb-5'>Our Vision</h3>
                     <p className="max-w-xl mx-auto text-sm text-white dark:text-neutral-400">
-                        At Accord Cables, our vision is to be the leading provider of innovative and high-quality wiring solutions that exceed the expectations of our customers. We strive to set industry standards through continuous technological advancements and a commitment to sustainability. Our goal is to offer cutting-edge products that not only meet the evolving needs of our clients but also contribute to the growth and success of their projects.</p>
+                        At Accords Cables, our vision is to be the leading provider of innovative and high-quality wiring solutions that exceed the expectations of our customers. We strive to set industry standards through continuous technological advancements and a commitment to sustainability. Our goal is to offer cutting-edge products that not only meet the evolving needs of our clients but also contribute to the growth and success of their projects.</p>
                 </div>
             </div>
 
