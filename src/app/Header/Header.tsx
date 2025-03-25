@@ -14,7 +14,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProductMenuOpen, setIsProductMenuOpen] = useState(false);
-  const [activeSubMenu, setActiveSubMenu] = useState(null);
+  const [activeSubMenu, setActiveSubMenu] = useState<number | null>(null);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -27,7 +27,7 @@ export default function Header() {
     setActiveSubMenu(null);
   };
 
-  const toggleSubMenu = (index) => {
+  const toggleSubMenu = (index: number) => {
     setActiveSubMenu(activeSubMenu === index ? null : index);
   };
 
