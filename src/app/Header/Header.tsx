@@ -48,8 +48,10 @@ export default function Header() {
           name: "House Wire",
           href: "/products/cables",
           submenu: [
-            { name: "ZHFR Wires", href: "/products/cables/copper" },
-            { name: "Fiber Optic Cables", href: "/products/cables/fiber" },
+            { name: "FR Wires", href: "/products/cables/copper" },
+            { name: "FRLSH Wire", href: "/products/cables/fiber" },
+            { name: "ZHFR Wire", href: "/products/cables/fiber" },
+         
           ],
         },
         {
